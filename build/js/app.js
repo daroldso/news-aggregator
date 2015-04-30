@@ -8,6 +8,13 @@ $(function(){
   // console.log(newspapersObj);
   newspapersObj.fetchNews('mingpao');
   newspapersObj.fetchNews('appledaily');
+  newspapersObj.fetchNews('oriental');
+  newspapersObj.fetchNews('thesun');
+  newspapersObj.fetchNews('singtao');
+  newspapersObj.fetchNews('hket');
+  newspapersObj.fetchNews('hkej');
+  newspapersObj.fetchNews('wenweipo');
+  newspapersObj.fetchNews('takungpao');
 
 
   // $.ajax({
