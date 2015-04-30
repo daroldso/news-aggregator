@@ -1,0 +1,13 @@
+- pageTitle = 'Website'
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel='stylesheet',href='style.css')
+    script(type='text/javascript', src='js/vendors.min.js')
+    script(type='text/javascript', src='js/app.min.js')
+  body
+    h1 Jade - node template engine
+    #container.col
+      block content
+

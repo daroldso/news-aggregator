@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/Newspapers.js"></script>
+
+
+</head>
+
+<body>
+    <h1> News</h1>
+    <div id="container" class="col">
+        <div id="mingpao" class="newspaper"></div>
+        <div id="appledaily" class="newspaper"></div>
+        <div id="oriental" class="newspaper"></div>
+        <div id="thesun" class="newspaper"></div>
+        <div id="singtao" class="newspaper"></div>
+        <div id="hket" class="newspaper"></div>
+        <div id="hkej" class="newspaper"></div>
+        <div id="wenweipo" class="newspaper"></div>
+        <div id="takungpao" class="newspaper"></div>
+    </div>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h1>{{newspaperName}}</h1>
+        <h2>{{headlineTitle}}</h2>
+        <a href="{{headlineLink}}">
+        	<img src="{{headlineImage}}" /></a>
+        <div class="body">
+          {{headlineExcerpt}}
+        </div>
+      </div>
+    </script>
+    <script type="text/javascript" src="js/handlebars.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
